@@ -1,107 +1,199 @@
         @font-face {
-          font-family: 'Raleway'; /* Name, den Sie der Schrift geben */
-          src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf') format('woff2'), /* Pfad zur Schriftart */
-               url('./fonts/Raleway/Raleway-VariableFont_wght.ttf') format('woff');
-          font-weight: normal; /* Optional: Dicke der Schrift */
-          font-style: normal;  /* Optional: Stärke der Schrift */
+            font-family: 'Raleway';
+            /* Name, den Sie der Schrift geben */
+            src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf') format('woff2'),
+                /* Pfad zur Schriftart */
+                url('./fonts/Raleway/Raleway-VariableFont_wght.ttf') format('woff');
+            font-weight: normal;
+            /* Optional: Dicke der Schrift */
+            font-style: normal;
+            /* Optional: Stärke der Schrift */
         }
 
 
-header {
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 10vh;
-    
-}
-.header-logo {
-    padding-left: 160px;
-}
-body {
-    margin: 0;
-    font-family: Raleway, sans-serif;
-    
-}
-main {
-    
-    
+        h2 {
+            text-align: center;
+        }
 
-}
-nav {
-    display: flex;
-    gap: 20px;
-    align-items: end;
-    padding-bottom: 10px;
-    padding-right: 160px;
-}
-nav :hover {
-    text-decoration: underline;
-    color: #008000;
-    text-underline-offset: 8px;
-    text-decoration-thickness: 4px;
-}
-nav a {
-    text-decoration: none;
-    color: black;
-    
-   
-}
-li {
-    list-style: none;
-    }
-.AOT-Section{
-    justify-content: center;
-    display: flex;
-    
-}
-.AOT-Container {
-    padding-bottom: 72px;
-    padding-top: 72px;
-    display: flex;
-    justify-content: center;
-    width: 80vw;
-    gap: 32px;
-    
-}
-.AOT-img {
-    object-fit: cover;
-    width: 450px;
-    border-radius: 16px;
-}
-.Aot-Button {
-    margin-top: 20px;
-    background-color: #008000;
-    color: white;
-    width: 150px;
-    height: 30px;
-}
-.Aot-Button:hover {
-    background-color: #0ab80a;
-    cursor: pointer;
-}
-.Recipe-Section {
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #EFEFEF;
-}
-.Recipe-Section-Container {
-    width: 80vw;
-}
-.Recipe-Section-img {
-    width: 300px;
-    border-radius: 16px;
-}
-.Recipe-Section-Gallery {
-    display: flex;
-    justify-content: space-between;
-    
-}
+
+        header {
+            font-family: Raleway, sans-serif;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            display: flex;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 10vh;
+            justify-content: center;
+
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            width: 80vw;
+        }
+
+        .header-logo {
+            height: 64px;
+            cursor: pointer;
+        }
+
+        body {
+            margin: 0;
+            font-family: Raleway, sans-serif;
+
+        }
+
+        main {
+            margin-bottom: 80px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: end;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+
+        nav :hover {
+            text-decoration: underline;
+            color: #008000;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 4px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+
+
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .AOT-Section {
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .AOT-Container {
+            padding-bottom: 72px;
+            padding-top: 72px;
+            display: flex;
+            justify-content: center;
+            width: 80vw;
+            gap: 32px;
+
+        }
+
+        .AOT-img {
+            object-fit: cover;
+            width: 450px;
+            border-radius: 16px;
+        }
+
+        .Aot-Button {
+            margin-top: 20px;
+            background-color: #008000;
+            color: white;
+            width: 150px;
+            height: 30px;
+            border: 0;
+            font-family: Raleway, sans-serif;
+            cursor: pointer;
+        }
+
+        .Aot-Button:hover {
+            background-color: #0ab80a;
+            cursor: pointer;
+        }
+
+        .Recipe-Section {
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #EFEFEF;
+        }
+
+        .Recipe-Section-Container {
+            width: 80vw;
+        }
+
+        .Recipe-Section-img {
+            width: 300px;
+            border-radius: 16px;
+        }
+
+        .Recipe-Section-Gallery {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+
+        }
+
+        .Article-Container {
+            display: flex;
+            width: 80vw;
+
+        }
+
+        article img {
+            width: 250px;
+            height: 250px;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #403b3b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80vw;
+        }
+
+        .footer-logo {
+            color: white;
+            filter: invert(1);
+            height: 80px;
+        }
+
+        .social-links {
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+        }
+        .impressum-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: #EFEFEF;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-bottom: 16px;
+        }
