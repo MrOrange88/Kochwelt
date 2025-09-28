@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header-container">
-            <a href="./index.html"><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo" /></a>
-            <nav>
-                <li><a href="./index.html">Start</a></li>
-                <li><a href="./rezept-des-tages.html">Rezept des Tages</a></li>
-                <li><a href="./kontakt.html">Kontakt</a></li>
-                <li><a href="./impressum.html">Impressum</a></li>
-            </nav>
-        </div>
+      <div class="header-container">
+        <a href="./index.html"
+          ><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo"
+        /></a>
+        <nav>
+          <li><a href="./index.html">Start</a></li>
+          <li><a href="./rezept-des-tages.html">Rezept des Tages</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+        </nav>
+      </div>
     </header>
-    <div class="contact-container">
-
+    <main>
+      <div class="contact-container">
         <form class="form-container" onsubmit="sendMail(event)">
-            <h1>Kontakt</h1>
-            <p>Du hast Fragen, Anregungen oder möchtest einfach nur Hallo sagen?<br> Dann nutze gerne das folgende
-                Kontaktformular, um mit uns in Verbindung zu treten.<br> Wir freuen uns darauf, von dir zu hören!</p>
-            <label class="form-label">
-                Dein Vorname:
-                <input type="text" pattern="[A-Za-z]+" title="Nur Buchstaben erlaubt" name="name">
-            </label>
-            <label class="form-label">
-                Dein Nachname:
-                <input type="text" pattern="[A-Za-z]+" title="Nur Buchstaben erlaubt" name="name">
-            </label>
-            <label class="form-label">
-                Deine E-Mail-Adresse:
-                <input type="email" name="email">
-            </label>
-            <label class="form-label">
-                Deine persönliche Nachricht:
-                <textarea maxlength="500" title="max.500 Zeichen" name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button class="send-button" type="submit">Send</button>
+          <h1>Kontakt</h1>
+          <p>
+            Du hast Fragen, Anregungen oder möchtest einfach nur Hallo sagen?<br />
+            Dann nutze gerne das folgende Kontaktformular, um mit uns in
+            Verbindung zu treten.<br />
+            Wir freuen uns darauf, von dir zu hören!
+          </p>
+          <label class="form-label">
+            Dein Vorname:
+            <input
+              required
+              type="text"
+              pattern="[A-Za-z]+"
+              title="Nur Buchstaben erlaubt"
+              name="name"
+            />
+          </label>
+          <label class="form-label">
+            Dein Nachname:
+            <input
+              required
+              type="text"
+              pattern="[A-Za-z]+"
+              title="Nur Buchstaben erlaubt"
+              name="name"
+            />
+          </label>
+          <label class="form-label">
+            Deine E-Mail-Adresse:
+            <input required type="email" name="email" />
+          </label>
+          <label class="form-label">
+            Deine persönliche Nachricht:
+            <textarea
+              required
+              maxlength="500"
+              title="max.500 Zeichen"
+              name="message"
+            ></textarea>
+          </label>
+          <!-- your other form fields go here -->
+          <button class="send-button" type="submit">Send</button>
         </form>
-
-
-    </div>
-
-
+      </div>
+    </main>
     <footer>
-        <div class="footer-container">
-            <a href="./index.html"><img class="footer-logo" src="./img/logo.png" alt="logo" /></a>
-            <div class="footer-links-container">
-                <a class="footer-links" href="./impressum.html">Impressum</a>
-                <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
+      <div class="footer-container">
+        <a href="./index.html"
+          ><img class="footer-logo" src="./img/logo.png" alt="logo"
+        /></a>
 
-            </div>
-            <div class="social-container">
-                <a href="https://www.facebook.com/?locale=de_DE"><img class="social-links" src="./img/facebook.png"
-                        alt="facebook"></a>
-                <a href="https://www.instagram.com/"><img class="social-links" src="./img/instagram.png"
-                        alt="instagram"></a>
-                <a href="http://www.linkedin.com/"><img class="social-links" src="./img/linkedin.png"
-                        alt="linkedin"></a>
-            </div>
+        <div class="social-container">
+          <a href="https://www.facebook.com/?locale=de_DE"
+            ><img class="social-links" src="./img/facebook.png" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              class="social-links"
+              src="./img/instagram.png"
+              alt="instagram"
+          /></a>
+          <a href="http://www.linkedin.com/"
+            ><img class="social-links" src="./img/linkedin.png" alt="linkedin"
+          /></a>
         </div>
+        <div class="footer-links-container">
+          <a class="footer-links" href="./impressum.html">Impressum</a>
+          <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
+          <p class="copyright">&copy; 2025 Kochwelt</p>
+        </div>
+      </div>
     </footer>
-
-</body>
-<script src="./script.js"></script>
-
+  </body>
+  <script src="./script.js"></script>
 </html>

@@ -1,95 +1,136 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kochwelt</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
-</head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="./index.html"
+          ><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo"
+        /></a>
+        <nav>
+          <li><a href="./index.html">Start</a></li>
+          <li><a href="./rezept-des-tages.html">Rezept des Tages</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="AOT-Section">
+        <div class="AOT-Container">
+          <div>
+            <img
+              class="AOT-img"
+              src="./img/croissant.jpg"
+              alt="Croissants Bild"
+            />
+          </div>
 
-<body>
-  <header>
-    <div class="header-container">
-      <a href="./index.html"><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo" /></a>
-      <nav>
-        <li><a href="./index.html">Start</a></li>
-        <li><a href="./rezept-des-tages.html">Rezept des Tages</a></li>
-        <li><a href="./kontakt.html">Kontakt</a></li>
-        <li><a href="./impressum.html">Impressum</a></li>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="AOT-Section">
-      <div class="AOT-Container">
-        <div>
-          <img class="AOT-img" src="./img/croissant.jpg" alt="Croissants Bild" />
+          <div>
+            <h1>Französische Croissants</h1>
+            <p>
+              Schmackhafte Croissants könnne auch zuhause sehr einfach gebacken
+              werden. Mit ca. 30 Minuten aufwand kannst du ein wundervolles
+              Frühstück zaubern.
+            </p>
+            <button class="Aot-Button">Rezept öffnen</button>
+          </div>
         </div>
-
+      </section>
+      <section class="Recipe-Section">
+        <div class="Recipe-Section-Container">
+          <h2>Lust auf was Neues?</h2>
+          <div class="Recipe-Section-Gallery">
+            <div>
+              <a href="./rezept-alex.html"
+                ><img
+                  class="Recipe-Section-img"
+                  src="./img/AuberginenPasta.png"
+                  alt="Alex Rezept"
+              /></a>
+              <figcaption>Auberginen Pasta</figcaption>
+            </div>
+            <div>
+              <a href="./rezept-nil.html"
+                ><img
+                  class="Recipe-Section-img"
+                  src="./img/Zuccini-Zitronen-Spaghetti.png"
+                  alt="Alex Rezept"
+              /></a>
+              <figcaption>Zuccini Spaghetti</figcaption>
+            </div>
+            <div>
+              <a href="./rezept-chris.html"
+                ><img
+                  class="Recipe-Section-img"
+                  src="./img/croissant.jpg"
+                  alt="Alex Rezept"
+              /></a>
+              <figcaption>Frische Croissants</figcaption>
+            </div>
+          </div>
+        </div>
+      </section>
+      <article>
         <div>
-          <h1>Französische Croissants</h1>
+          <h2>Nudelgerichte – einfach und vielfältig</h2>
+        </div>
+        <div class="Article-Container">
           <p>
-            Schmackhafte Croissants könnne auch zuhause sehr einfach gebacken
-            werden. Mit ca. 30 Minuten aufwand kannst du ein wundervolles
-            Frühstück zaubern.
+            Nudelgerichte – einfach und vielfältig Nudeln gehören weltweit zu
+            den beliebtesten Speisen. <br />
+            Ob italienische Klassiker wie Spaghetti Bolognese und Lasagne oder
+            asiatische Varianten wie Ramen <br />
+            und Reisnudeln – sie sind in vielen Kulturen fest verankert. Ihr
+            großer Vorteil: <br />
+            Nudeln sind schnell zubereitet und lassen sich mit fast allen
+            Zutaten kombinieren. <br />
+            Ob vegetarisch mit Gemüse, herzhaft mit Fleisch oder sogar süß mit
+            Zucker und Zimt – <br />
+            Nudelgerichte passen zu jedem Geschmack. <br />
+            Sie eignen sich für die schnelle Küche ebenso wie für besondere
+            Anlässe. <br />
+            Ein Teller Pasta oder eine Schüssel Ramen bringt Menschen zusammen
+            und sorgt für Genussmomente. ﻿
           </p>
-          <button class="Aot-Button">Rezept öffnen</button>
+          <img src="./img/wok.jpg" alt="Bild Wok" />
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <a href="./index.html"
+          ><img class="footer-logo" src="./img/logo.png" alt="logo"
+        /></a>
+
+        <div class="social-container">
+          <a href="https://www.facebook.com/?locale=de_DE"
+            ><img class="social-links" src="./img/facebook.png" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              class="social-links"
+              src="./img/instagram.png"
+              alt="instagram"
+          /></a>
+          <a href="http://www.linkedin.com/"
+            ><img class="social-links" src="./img/linkedin.png" alt="linkedin"
+          /></a>
+        </div>
+        <div class="footer-links-container">
+          <a class="footer-links" href="./impressum.html">Impressum</a>
+          <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
+          <p class="copyright">&copy; 2025 Kochwelt</p>
         </div>
       </div>
-    </section>
-    <section class="Recipe-Section">
-      <div class="Recipe-Section-Container">
-        <h2>Lust auf was Neues?</h2>
-        <div class="Recipe-Section-Gallery">
-          <div>
-            <a href="./rezept-alex.html"><img class="Recipe-Section-img" src="./img/croissant.jpg"
-                alt="Alex Rezept" /></a>
-            <figcaption>Frische Croissants</figcaption>
-          </div>
-          <div>
-            <a href="./rezept-nil.html"><img class="Recipe-Section-img" src="./img/croissant.jpg"
-                alt="Alex Rezept" /></a>
-            <figcaption>Frische Croissants</figcaption>
-          </div>
-          <div>
-            <a href="./rezept-chris.html"><img class="Recipe-Section-img" src="./img/croissant.jpg"
-                alt="Alex Rezept" /></a>
-            <figcaption>Frische Croissants</figcaption>
-          </div>
-        </div>
-      </div>
-    </section>
-    <article>
-      <div>
-        <h2>Pfanne vs. Wok - Was ist besser?</h2>
-      </div>
-      <div class="Article-Container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iusto, est repudiandae deleniti ea ad
-          accusamus aliquid consequuntur! Animi aut dignissimos tempore? Inventore corrupti sequi vitae esse distinctio
-          quidem dolore.</p>
-        <img src="./img/wok.jpg" alt="Bild Wok" />
-      </div>
-    </article>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <a href="./index.html"><img class="footer-logo" src="./img/logo.png" alt="logo" /></a>
-      <div class="footer-links-container">
-        <a class="footer-links" href="./impressum.html">Impressum</a>
-        <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
-
-      </div>
-      <div class="social-container">
-        <a href="https://www.facebook.com/?locale=de_DE"><img class="social-links" src="./img/facebook.png"
-            alt="facebook"></a>
-        <a href="https://www.instagram.com/"><img class="social-links" src="./img/instagram.png" alt="instagram"></a>
-        <a href="http://www.linkedin.com/"><img class="social-links" src="./img/linkedin.png" alt="linkedin"></a>
-      </div>
-    </div>
-  </footer>
-</body>
-<script src="./script.js"></script>
-
+    </footer>
+  </body>
+  <script src="./script.js"></script>
 </html>
