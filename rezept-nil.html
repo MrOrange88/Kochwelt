@@ -1,55 +1,124 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rezept des Tages</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
-  </head>
 
-  <body>
-    <header>
-      <div class="header-container">
-        <a href="./index.html"
-          ><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo"
-        /></a>
-        <nav>
-          <li><a href="./index.html">Start</a></li>
-          <li><a href="./rezept-des-tages.html">Rezept des Tages</a></li>
-          <li><a href="./kontakt.html">Kontakt</a></li>
-          <li><a href="./impressum.html">Impressum</a></li>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezept des Tages</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./style-nil.css" />
+  <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="./index.html"><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo" /></a>
+      <nav>
+        <li><a href="./index.html">Start</a></li>
+        <li><a href="./rezept-des-tages.html">Rezept des Tages</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
+        <li><a href="./impressum.html">Impressum</a></li>
+      </nav>
+    </div>
+  </header>
+  <main class="recipe-nil-main">
+    <section class="recipe-nil-section">
+      <h1>Zuccini-Zitronen-Spaghetti</h1>
+      <img class="recipe-img" src="./img/Zuccini-Zitronen-Spaghetti.png" alt="Bild Zuccini-Zitronen-Spaghetti">
+    </section>
+    <section class="recipe-nil-section-icons">
+      <div class="icons-container">
+        <img src="./img/icons/clock-regular.svg" alt="Uhr icon">
+        <p>Zubereitungszeit: 10 Min</p>
       </div>
-    </header>
-    <main></main>
-
-    <footer>
-      <div class="footer-container">
-        <a href="./index.html"
-          ><img class="footer-logo" src="./img/logo.png" alt="logo"
-        /></a>
-
-        <div class="social-container">
-          <a href="https://www.facebook.com/?locale=de_DE"
-            ><img class="social-links" src="./img/facebook.png" alt="facebook"
-          /></a>
-          <a href="https://www.instagram.com/"
-            ><img
-              class="social-links"
-              src="./img/instagram.png"
-              alt="instagram"
-          /></a>
-          <a href="http://www.linkedin.com/"
-            ><img class="social-links" src="./img/linkedin.png" alt="linkedin"
-          /></a>
+      <div class="icons-container">
+        <img src="./img/icons/brain-solid.svg" alt="Hirn icon">
+        <p>normal</p>
+      </div>
+      <div class="icons-container">
+        <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender icon">
+        <p>03.09.2009</p>
+      </div>
+    </section>
+    <section class="ingredients-section">
+      <h2>Zutaten:</h2>
+      <div class="ingredients-container">
+        <div class="ingredients-per-person-container">
+          <div class="persons-number-container">
+            <p> Für <span>2</span> Personen</p>
+          </div>
+          <div class="persons-number-buttons-container">
+            <div class="buttons">+</div>
+            <div class="buttons">-</div>
+            <div><input type="text" inputmode="numeric" max="20" min="0" placeholder="2"></div>
+          </div>
         </div>
-        <div class="footer-links-container">
-          <a class="footer-links" href="./impressum.html">Impressum</a>
-          <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
-          <p class="copyright">&copy; 2025 Kochwelt</p>
+        <div class="ingredients-table-container">
+          <table>
+            <tr>
+              <td>125g</td>
+              <td>Spaghetti</td>
+            </tr>
+            <tr>
+              <td>175g</td>
+              <td>Zucchini</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Zitrone(n)</td>
+            </tr>
+            <tr>
+              <td>50 ml</td>
+              <td>Gemüsebrühe</td>
+            </tr>
+            <tr>
+              <td>1 EL</td>
+              <td>Olivenöl</td>
+            </tr>
+            <tr>
+              <td>0,5 TL</td>
+              <td>Thymian(getrocknet)</td>
+            </tr>
+            <tr>
+              <td>50g</td>
+              <td>Feta-Käse</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Knoblauchzehe(n)</td>
+            </tr>
+            <tr>
+              <td>Salz und<br>Pfeffer</td>
+              <td>nach Geschmack</td>
+            </tr>
+            <tr>
+              <td>evtl.</td>
+              <td>Kräutersalz</td>
+            </tr>
+          </table>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <a href="./index.html"><img class="footer-logo" src="./img/logo.png" alt="logo" /></a>
+
+      <div class="social-container">
+        <a href="https://www.facebook.com/?locale=de_DE"><img class="social-links" src="./img/facebook.png"
+            alt="facebook" /></a>
+        <a href="https://www.instagram.com/"><img class="social-links" src="./img/instagram.png" alt="instagram" /></a>
+        <a href="http://www.linkedin.com/"><img class="social-links" src="./img/linkedin.png" alt="linkedin" /></a>
+      </div>
+      <div class="footer-links-container">
+        <a class="footer-links" href="./impressum.html">Impressum</a>
+        <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
+        <p class="copyright">&copy; 2025 Kochwelt</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

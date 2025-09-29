@@ -1,0 +1,112 @@
+.recipe-nil-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.recipe-nil-section {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 16px;
+
+}
+
+.recipe-img {
+    width: 80vw;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.recipe-nil-section-icons {
+    width: 80vw;
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
+
+}
+
+.recipe-nil-section-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #EFEFEF;
+    padding: 6px;
+    border-radius: 8px;
+
+
+}
+
+.icons-container p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.ingredients-section {
+    width: 80vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.ingredients-container {
+    width: 50vw;
+    background-color: #EFEFEF;
+    border-radius: 16px;
+    
+}
+.ingredients-section h2 {
+    
+}
+.ingredients-per-person-container {
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.persons-number-buttons-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+}
+.buttons {
+    width: 32px;
+    height: 32px;
+    background-color: #0ab80a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.persons-number-buttons-container input {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.ingredients-table-container {
+    width: 50vw;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+.ingredients-section table {
+      
+}
+.ingredients-section table tr td:first-child {
+    padding-right: 32px;
+}
