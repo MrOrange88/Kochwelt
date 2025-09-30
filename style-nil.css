@@ -29,9 +29,12 @@
 }
 
 .recipe-nil-section-icons img {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
+    filter: grayscale(1);
+    opacity: 0.6;
+
 }
 
 .icons-container {
@@ -62,9 +65,7 @@
     border-radius: 16px;
     
 }
-.ingredients-section h2 {
-    
-}
+
 .ingredients-per-person-container {
     
     display: flex;
@@ -104,9 +105,96 @@
     display: flex;
     justify-content: center;
 }
-.ingredients-section table {
-      
-}
+
 .ingredients-section table tr td:first-child {
     padding-right: 32px;
 }
+
+.preparation-section {
+    width: 80vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.preparation-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.preparation-steps ol {
+    font-weight: bolder;
+}
+
+.preparation-steps li {
+  list-style: decimal;
+}
+.preparation-steps li::marker {
+  font-weight: bold;
+  padding-right: 16px;
+}
+.preparation-steps p {
+  padding-left: 16px;
+  margin-block-start: 0;
+    margin-block-end: 0;
+}
+ol li.preparation-tipp {
+  list-style-type: none;
+  position: relative;
+}
+
+ol li.preparation-tipp::before {
+  content: "Tipp:";
+  font-weight: bold;
+  position: absolute;
+  left: -2.5em;
+  
+}
+.nutritional-values-section {
+    width: 80vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 48px;
+
+}
+.nutritional-values-container {
+    display: flex;
+    gap: 8px;
+}
+.nutritional-values-box {
+    display: flex;
+    gap: 4px;
+    border-radius: 8px;
+    background-color: #EFEFEF;
+}
+.nutritional-values-box p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 8px;
+    font-weight: bold;
+   
+}
+.recipe-created-by {
+    width: 80vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+}
+.profile-container img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+
+
+
