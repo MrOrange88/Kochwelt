@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rezept des Tages</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./stylealex.css" />
     <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
   </head>
 
@@ -22,10 +23,167 @@
         </nav>
       </div>
     </header>
-    <main>
-      <div>
-        <h1>Auberginen Pasta mit Tomaten</h1>
-        <img src="./img/AuberginenPasta.png" alt="" />
+    <main class="recipe-main">
+      <div class="recipe-container">
+        <div class="recipe-header">
+          <h1>Auberginen - Pasta mit Tomaten</h1>
+        </div>
+        <div class="recipe-img-container">
+          <img class="recipe-img" src="./img/AuberginenPasta.png" alt="" />
+        </div>
+        <section class="section-recipe-icons">
+          <div class="recipe-icons-container">
+            <img
+              class="recipe-icons"
+              src="./img/icons/clock-regular.svg"
+              alt=""
+            />
+            <span>Zubereitungszeit: 30 Minuten</span>
+          </div>
+          <div class="recipe-icons-container">
+            <img
+              class="recipe-icons"
+              src="./img/icons/brain-solid.svg"
+              alt=""
+            />
+            <span>Simpel</span>
+          </div>
+          <div class="recipe-icons-container">
+            <img
+              class="recipe-icons"
+              src="./img/icons/calendar-alt-regular.svg"
+              alt=""
+            />
+            <span>29.09.2025</span>
+          </div>
+        </section>
+        <section class="section-recipe-serving">
+          <div class="person-recipe-container">
+            <button class="plus-minus-btn">
+              <img
+                class="plus-minus-icons"
+                src="./img/icons alex/minus-red.png"
+                alt=""
+              />
+            </button>
+            <input type="number" name="" id="" />
+            <p>Personen</p>
+            <button class="plus-minus-btn">
+              <img
+                class="plus-minus-icons"
+                src="./img/icons alex/add-green.png"
+                alt=""
+              />
+            </button>
+          </div>
+        </section>
+        <section class="section-ingredients">
+          <div>
+            <p class="headline-ingredients">Zutaten:</p>
+            <p class="ingredients-style-one">
+              <span>1</span>
+              <span>Aubergine (ca.250g)</span>
+            </p>
+            <p class="ingredients-style-second">
+              <span>1</span>
+              <span>Zwiebel</span>
+            </p>
+            <p class="ingredients-style-one">
+              <span>1</span>
+              <span>Knoblauchzehe</span>
+            </p>
+            <p class="ingredients-style-second">
+              <span>1/2</span>
+              <span>rote Peperoni</span>
+            </p>
+            <p class="ingredients-style-one">
+              <span>100 g</span>
+              <span>Chili-Cabanossi</span>
+            </p>
+            <p class="ingredients-style-second">
+              <span>6</span>
+              <span
+                >Stiele Oregano (ersatzweise 1/2 Tl getrockneter Oregano)</span
+              >
+            </p>
+            <p class="ingredients-style-one">
+              <span>3</span>
+              <span>El Olivenöl</span>
+            </p>
+            <p class="ingredients-style-second">
+              <span>425g</span>
+              <span>geschälte Tomaten (1 Dose)</span>
+            </p>
+            <p class="ingredients-style-one">
+              <span>200 g</span>
+              <span>Nudeln (z.B. Spaghetti oder Linguine)</span>
+            </p>
+          </div>
+        </section>
+        <section class="section-nutrition">
+          <p>Pro Portion:</p>
+          <p>23g Eiweiß</p>
+          <p>38g Fett</p>
+          <p>81 Khlenhydrate</p>
+          <p>= 786 kcal(3292kJ)</p>
+        </section>
+        <section class="section-preparation">
+          <p class="headline-preparation">Zubereitung</p>
+          <div class="preparation-container">
+            <img
+              class="number-icon"
+              src="./img/icons alex/number-one.png"
+              alt=""
+            />
+            <p>
+              Aubergine putzen, in Würfel schneiden und auf einem mit
+              Küchenpapier ausgelegtem Blech ausbreiten. Mit etwas Salz
+              bestreuen und 10 Min. stehen lassen.
+            </p>
+          </div>
+          <div class="preparation-container">
+            <img
+              class="number-icon"
+              src="./img/icons alex/number-two.png"
+              alt=""
+            />
+            <p>
+              Zwiebel und Knoblauch fein hacken. Peperoni in dünne Ringe
+              schneiden. Cabanossi würfeln. Oregano von den Stielen zupfen, die
+              Hälfte fein hacken.
+            </p>
+          </div>
+          <div class="preparation-container">
+            <img
+              class="number-icon"
+              src="./img/icons alex/number-three.png"
+              alt=""
+            />
+            <p>
+              1 El Öl in einer großen Pfanne erhitzen und die Cabanossi darin
+              anbraten, herausnehmen. 2 El Öl in das Fett in der Pfanne geben
+              und erhitzen. Auberginen bei starker Hitze 3-4 Min. darin
+              anbraten. Zwiebeln, Knoblauch, Peperoni und gehackten Oregano
+              zugeben und kurz mitbraten. Mit Salz und 1 Prise Zucker würzen.
+              Tomaten und 100 ml Wasser zugeben, alles aufkochen und offen 10
+              Min. köcheln lassen.
+            </p>
+          </div>
+          <div class="preparation-container">
+            <img
+              class="number-icon"
+              src="./img/icons alex/number-four.png"
+              alt=""
+            />
+            <p>
+              Nudeln in reichlich kochenden Salzwasser nach Packungsanweisung
+              garen. Sauce würzig abschmecken. Nudeln abgießen, dabei 100 ml
+              Kochwasser auffangen. Nudeln zurück in den Topf geben, mit der
+              Sauce und dem aufgefangenem Nudelwasser gut durchmischen. Mit
+              restlichen Oregano bestreut servieren.
+            </p>
+          </div>
+        </section>
       </div>
     </main>
 
