@@ -46,46 +46,46 @@
       <div class="ingredients-container">
         <div class="ingredients-per-person-container">
           <div class="persons-number-container">
-            <p> Für <span>2</span> Portion(en)</p>
+            <p> Für <span id="portion">2</span> Portion(en)</p>
           </div>
           <div class="persons-number-buttons-container">
-            <button class="buttons">+</button>
-            <input type="text" inputmode="numeric" max="20" min="0" placeholder="2">
-            <button class="buttons">-</button>
+            <button class="buttons" id="add" onclick="increase_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()">+</button>
+            <input type="text" inputmode="numeric" max="12" min="1" value="2" title="12 max" id="portion_value">
+            <button class="buttons" id="remove" onclick="decrease_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()">-</button>
           </div>
         </div>
         <div class="ingredients-table-container">
           <table>
             <tr class="table-slot">
-              <td>125g</td>
+              <td><span class="ingredient_1" data-base="125">125</span>g</td>
               <td>Spaghetti</td>
             </tr>
             <tr>
-              <td>175g</td>
+              <td><span class="ingredient_2" data-base="175">175</span>g</td>
               <td>Zucchini</td>
             </tr>
             <tr class="table-slot">
-              <td>1</td>
+             <td><span class="ingredient_3" data-base="1">1</span></td>
               <td>Zitrone(n)</td>
             </tr>
             <tr>
-              <td>50 ml</td>
+              <td><span class="ingredient_4" data-base="50">50</span>ml</td>
               <td>Gemüsebrühe</td>
             </tr>
             <tr class="table-slot">
-              <td>1 EL</td>
+              <td><span class="ingredient_5" data-base="1">1</span>EL</td>
               <td>Olivenöl</td>
             </tr>
             <tr>
-              <td>0,5 TL</td>
+              <td><span class="ingredient_6" data-base="0.5">0.5</span>TL</td>
               <td>Thymian(getrocknet)</td>
             </tr>
             <tr class="table-slot">
-              <td>50g</td>
+              <td><span class="ingredient_7" data-base="50">50</span>g</td>
               <td>Feta-Käse</td>
             </tr>
             <tr>
-              <td>1</td>
+              <td><span class="ingredient_8" data-base="1">1</span></td>
               <td>Knoblauchzehe(n)</td>
             </tr>
             <tr class="table-slot">
@@ -183,5 +183,6 @@
     </div>
   </footer>
 </body>
+<script src="./script-nil.js"></script>
 
 </html>
