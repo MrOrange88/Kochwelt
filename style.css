@@ -20,6 +20,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            transition: all 100ms ease-in-out;
         }
 
         h2 {
@@ -28,7 +29,7 @@
 
         header {
             font-family: Raleway, sans-serif;
-            font-weight: bold;
+            font-weight: 700;
             position: sticky;
             top: 0;
             display: flex;
@@ -51,15 +52,14 @@
             cursor: pointer;
         }
 
-        .datenschutz {
+        .privacy {
             text-align: center;
             display: flex;
             justify-content: center;
             margin-bottom: 0;
         }
 
-        .datenschutz-container {
-            width: 80vw;
+        .privacy-container {
             padding-bottom: 16px;
             background-color: #EFEFEF;
             display: flex;
@@ -90,12 +90,12 @@
             list-style: none;
         }
 
-        .AOT-Section {
+        .aot-section {
             justify-content: center;
             display: flex;
         }
 
-        .AOT-Container {
+        .aot-container {
             padding-bottom: 72px;
             padding-top: 72px;
             display: flex;
@@ -104,13 +104,13 @@
             gap: 32px;
         }
 
-        .AOT-img {
+        .aot-img {
             object-fit: cover;
             width: 450px;
             border-radius: 16px;
         }
 
-        .Aot-Button {
+        .aot-button {
             margin-top: 20px;
             background-color: #008000;
             color: white;
@@ -121,12 +121,27 @@
             cursor: pointer;
         }
 
-        .Aot-Button:hover {
+        .aot-button:hover {
             background-color: #0ab80a;
             cursor: pointer;
         }
 
-        .Recipe-Section {
+        .mail-send-main {
+            background-color: #EFEFEF;
+        }
+        
+        .mail-send-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 64px;
+        }
+
+        .mail-send-container h2 {
+            text-align: center;
+        }
+
+        .recipe-section {
             align-items: center;
             padding-top: 16px;
             padding-bottom: 80px;
@@ -136,18 +151,18 @@
             background-color: #EFEFEF;
         }
 
-        .Recipe-Section-Container {
+        .recipe-section-container {
             width: 80vw;
         }
 
-        .Recipe-Section-img {
+        .recipe-section-img {
             width: 300px;
             height: 250px;
             object-fit: cover;
             border-radius: 16px;
         }
 
-        .Recipe-Section-Gallery {
+        .recipe-section-gallery {
             display: flex;
             justify-content: space-between;
         }
@@ -160,13 +175,22 @@
             margin-top: 12px;
         }
 
-        .Article-Container {
+        .article-container {
             display: flex;
+            justify-content: space-between;
             width: 80vw;
+            
+        }
+
+        article p {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 60%;
         }
 
         article img {
-            width: 250px;
+            width: 300px;
             height: 250px;
             border-radius: 16px;
             object-fit: cover;
@@ -221,7 +245,7 @@
             margin-block-start: 0;
         }
 
-        .impressum-container {
+        .imprint-container {
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -229,7 +253,7 @@
             background-color: #EFEFEF;
             padding-bottom: 16px;
         }
-        .impressum-headline {
+        .imprint-headline {
             margin-block-start: 64px;
             margin-block-end: 0;
         }
@@ -253,7 +277,7 @@
         .form-label {
             display: flex;
             flex-direction: column;
-            font-weight: bold;
+            font-weight: 700;
         }
         form input {
             height: 30px;
