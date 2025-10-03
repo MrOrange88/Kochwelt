@@ -15,7 +15,6 @@
     text-align: center;
     margin-top: 8px;
     margin-bottom: 16px;
-    font-size: 24px;
     font-weight: bold;
 }
 .recipe-img {
@@ -65,7 +64,7 @@
     padding: 0;
     width: 35px;
     height: 35px;
-    cursor: pointer;
+    cursor: pointer;   
 }
 .plus-minus-icons {
     width: 32px;
@@ -87,7 +86,7 @@
     padding-top: 18px;
     padding-left: 24px;
     margin: 0px;
-    }
+}
 .ingredients-style-second {
     padding-left: 24px;
 }
@@ -119,7 +118,23 @@
     height: 36px;
     padding-bottom: 30px;
     gap: 4px;
+}
+.section-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 48px;
+    width: 80vw;
+}
+.profil-img {
+    width: 100px;
+    height: 100px;
+    padding-top: 24px;
     
-    
-   
+}
+.author-container {
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
+    align-items: center;
 }

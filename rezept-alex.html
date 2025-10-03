@@ -29,14 +29,18 @@
           <h1>Auberginen - Pasta mit Tomaten</h1>
         </div>
         <div class="recipe-img-container">
-          <img class="recipe-img" src="./img/AuberginenPasta.png" alt="" />
+          <img
+            class="recipe-img"
+            src="./img/AuberginenPasta.png"
+            alt="Auberginen Pasta img"
+          />
         </div>
         <section class="section-recipe-icons">
           <div class="recipe-icons-container">
             <img
               class="recipe-icons"
               src="./img/icons/clock-regular.svg"
-              alt=""
+              alt="Clock Icon"
             />
             <span>Zubereitungszeit: 30 Minuten</span>
           </div>
@@ -44,7 +48,7 @@
             <img
               class="recipe-icons"
               src="./img/icons/brain-solid.svg"
-              alt=""
+              alt="Brain Icon"
             />
             <span>Simpel</span>
           </div>
@@ -52,27 +56,35 @@
             <img
               class="recipe-icons"
               src="./img/icons/calendar-alt-regular.svg"
-              alt=""
+              alt="Calendar Icon"
             />
             <span>29.09.2025</span>
           </div>
         </section>
         <section class="section-recipe-serving">
           <div class="person-recipe-container">
-            <button class="plus-minus-btn">
+            <button onclick="wertverringern()" class="plus-minus-btn">
               <img
                 class="plus-minus-icons"
                 src="./img/icons alex/minus-red.png"
-                alt=""
+                alt="Minus Button"
               />
             </button>
-            <input type="number" name="" id="" />
+            <input
+              type="number"
+              value="2"
+              name="menge"
+              min="1"
+              max="20"
+              step="1"
+              id="person-input"
+            />
             <p>Personen</p>
-            <button class="plus-minus-btn">
+            <button onclick="werterhöhen()" class="plus-minus-btn">
               <img
                 class="plus-minus-icons"
                 src="./img/icons alex/add-green.png"
-                alt=""
+                alt="Plus Button"
               />
             </button>
           </div>
@@ -80,43 +92,45 @@
         <section class="section-ingredients">
           <div>
             <p class="headline-ingredients">Zutaten:</p>
-            <p class="ingredients-style-one">
-              <span>1</span>
-              <span>Aubergine (ca.250g)</span>
+            <p class="ingredient ingredients-style-one">
+              <span class="ingredient-value">1</span>
+              <span class="ingredient-text">Aubergine (ca.250g)</span>
             </p>
-            <p class="ingredients-style-second">
-              <span>1</span>
-              <span>Zwiebel</span>
+            <p class="ingredient ingredients-style-second">
+              <span class="ingredient-value">1</span>
+              <span class="ingredient-text">Zwiebel</span>
             </p>
-            <p class="ingredients-style-one">
-              <span>1</span>
-              <span>Knoblauchzehe</span>
+            <p class="ingredient ingredients-style-one">
+              <span class="ingredient-value">1</span>
+              <span class="ingredient-text">Knoblauchzehe</span>
             </p>
-            <p class="ingredients-style-second">
-              <span>1/2</span>
-              <span>rote Peperoni</span>
+            <p class="ingredient ingredients-style-second">
+              <span class="ingredient-value">1/2</span>
+              <span class="ingredient-text">rote Peperoni</span>
             </p>
-            <p class="ingredients-style-one">
-              <span>100 g</span>
-              <span>Chili-Cabanossi</span>
+            <p class="ingredient ingredients-style-one">
+              <span class="ingredient-value">100 g</span>
+              <span class="ingredient-text">Chili-Cabanossi</span>
             </p>
-            <p class="ingredients-style-second">
-              <span>6</span>
-              <span
+            <p class="ingredient ingredients-style-second">
+              <span class="ingredient-value">6</span>
+              <span class="ingredient-text"
                 >Stiele Oregano (ersatzweise 1/2 Tl getrockneter Oregano)</span
               >
             </p>
-            <p class="ingredients-style-one">
-              <span>3</span>
-              <span>El Olivenöl</span>
+            <p class="ingredient ingredients-style-one">
+              <span class="ingredient-value">3</span>
+              <span class="ingredient-text">El Olivenöl</span>
             </p>
-            <p class="ingredients-style-second">
-              <span>425g</span>
-              <span>geschälte Tomaten (1 Dose)</span>
+            <p class="ingredient ingredients-style-second">
+              <span class="ingredient-value">425 g</span>
+              <span class="ingredient-text">geschälte Tomaten (1 Dose)</span>
             </p>
-            <p class="ingredients-style-one">
-              <span>200 g</span>
-              <span>Nudeln (z.B. Spaghetti oder Linguine)</span>
+            <p class="ingredient ingredients-style-one">
+              <span class="ingredient-value">200 g</span>
+              <span class="ingredient-text"
+                >Nudeln (z.B. Spaghetti oder Linguine)</span
+              >
             </p>
           </div>
         </section>
@@ -125,7 +139,7 @@
           <p>23g Eiweiß</p>
           <p>38g Fett</p>
           <p>81 Khlenhydrate</p>
-          <p>= 786 kcal(3292kJ)</p>
+          <p>= 786 kcal (3292kJ)</p>
         </section>
         <section class="section-preparation">
           <p class="headline-preparation">Zubereitung</p>
@@ -133,7 +147,7 @@
             <img
               class="number-icon"
               src="./img/icons alex/number-one.png"
-              alt=""
+              alt="img 1"
             />
             <p>
               Aubergine putzen, in Würfel schneiden und auf einem mit
@@ -145,7 +159,7 @@
             <img
               class="number-icon"
               src="./img/icons alex/number-two.png"
-              alt=""
+              alt="img 2"
             />
             <p>
               Zwiebel und Knoblauch fein hacken. Peperoni in dünne Ringe
@@ -157,7 +171,7 @@
             <img
               class="number-icon"
               src="./img/icons alex/number-three.png"
-              alt=""
+              alt="img 3"
             />
             <p>
               1 El Öl in einer großen Pfanne erhitzen und die Cabanossi darin
@@ -173,7 +187,7 @@
             <img
               class="number-icon"
               src="./img/icons alex/number-four.png"
-              alt=""
+              alt="img 4"
             />
             <p>
               Nudeln in reichlich kochenden Salzwasser nach Packungsanweisung
@@ -182,6 +196,19 @@
               Sauce und dem aufgefangenem Nudelwasser gut durchmischen. Mit
               restlichen Oregano bestreut servieren.
             </p>
+          </div>
+        </section>
+        <section class="section-author">
+          <div>
+            <p>Rezept erstellt von</p>
+            <div class="author-container">
+              <img
+                class="profil-img"
+                src="./img/icons alex/Profil 1 .png"
+                alt="Profilbild Alex"
+              />
+              <figcaption>Alexander Vielkind</figcaption>
+            </div>
           </div>
         </section>
       </div>
@@ -215,4 +242,5 @@
       </div>
     </footer>
   </body>
+  <script src="scriptalex.js"></script>
 </html>
