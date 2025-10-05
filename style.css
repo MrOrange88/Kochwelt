@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   transition: all 100ms ease-in-out;
-  
 }
 
 h2 {
@@ -54,7 +53,6 @@ header {
 .logo-small {
   height: 48px;
   cursor: pointer;
-  
 }
 
 .privacy {
@@ -78,7 +76,7 @@ nav {
   cursor: pointer;
 }
 
-nav :hover {
+nav a:hover {
   text-decoration: underline;
   color: #008000;
   text-underline-offset: 8px;
@@ -97,6 +95,38 @@ nav a {
   border: 0;
   font-family: Raleway, sans-serif;
   cursor: pointer;
+}
+
+.menu-open-close:hover {
+  background-color: #0ab80a;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 4px;
+}
+.responsive-menu {
+  background-color: rgb(239, 239, 239, 0.9);
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 100px;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+}
+.closed-menu {
+  display: none;
+}
+
+.responsive-menu a {
+  text-decoration: none;
+  color: black;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  
+}
+.responsive-menu a:hover {
+  color: #0ab80a;
 }
 
 li {
@@ -140,7 +170,7 @@ li {
 }
 
 .mail-send-main {
-  background-color: #efefef;
+  background-color: rgb(239, 239, 239);
 }
 
 .mail-send-container {
@@ -322,19 +352,7 @@ textarea {
   margin-top: 24px;
   margin-bottom: 100px;
 }
-.responsive-menu {
-    background-color: #efefef;
-    display: flex;
-    flex-direction: column;
-    width: 180px;
-    height: 350px;
-    position: absolute;
-    top: 80px;
-    right: 0px;
-}
-.closed-menu {
-    display: none;
-}
+
 
 @media (max-width: 1150px) {
   .aot-img {
@@ -357,50 +375,47 @@ textarea {
 @media (min-width: 951px) {
   .menu-open-close {
     display: none;
-
   }
   .closed-menu {
     display: none;
-
-}
-.logo-small {
+  }
+  .logo-small {
     display: none;
   }
   .logo-small-footer {
     display: none;
   }
+  .logo-small-footer-link {
+    display: none;
+  } 
 }
- @media (max-width: 950px) {
-    nav a {
-        display: none;
-        
-    }
-    nav button {
-        text-decoration: none;
-        color: white;
-    }
-    
-
-    }
-.header-logo {
+@media (max-width: 950px) {
+  nav a {
     display: none;
   }
-  
+  .menu-open-close {
+    text-decoration: none;
+    color: white;
+  }
+  .header-logo {
+    display: none;
+  }
+
   header {
     justify-content: normal;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-logo-link {
+    display: none;
+  }
+  .logo-small-footer {
+    height: 48px;
+    filter: invert(1);
+    cursor: pointer;
+  }
 }
-.footer-logo {
-    display: none;
-  }
-.footer-logo-link {
-    display: none;
-  }
-.logo-small-footer {
-        height: 48px;
-        filter: invert(1);
-        cursor: pointer;
-    }
-
 
 @media (max-width: 800px) {
   .aot-container {
@@ -436,8 +451,6 @@ textarea {
     height: 200px;
   }
 }
-
-
 
 @media (max-width: 500px) {
   .aot-container {
@@ -478,12 +491,11 @@ textarea {
     width: 220px;
     height: 48px;
     align-items: center;
-    
   }
   .footer-links-container {
     display: none;
   }
   .footer-container {
     justify-content: space-between;
-}
+  }
 }

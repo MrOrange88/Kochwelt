@@ -12,16 +12,27 @@
 
 <body>
   <header>
-    <div class="header-container">
-      <a href="./index.html"><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo" /></a>
-      <nav>
+      <div class="header-container">
+        <a href="./index.html"
+          ><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo"
+        /></a>
+        <img class="logo-small" src="./img/logo_small.png" alt="" />
+        <nav>
+          <li><a href="./index.html">Start</a></li>
+          <li><a href="./rezept-chris.html">Rezept des Tages</a></li>
+          <li><a href="./kontakt.html">Kontakt</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+          <button onclick="toggleMenu()" class="menu-open-close">Menu</button>
+        </nav>
+      </div>
+      <div id="responsive-menu" class="responsive-menu closed-menu">
         <li><a href="./index.html">Start</a></li>
         <li><a href="./rezept-chris.html">Rezept des Tages</a></li>
         <li><a href="./kontakt.html">Kontakt</a></li>
         <li><a href="./impressum.html">Impressum</a></li>
-      </nav>
-    </div>
-  </header>
+        <li><a href="./datenschutz.html">Datenschutz</a></li>
+      </div>
+    </header>
   <main class="recipe-nil-main">
     <section class="recipe-nil-section">
       <h1>Zuccini-Zitronen-Spaghetti</h1>
@@ -166,23 +177,36 @@
   </main>
 
   <footer>
-    <div class="footer-container">
-      <a href="./index.html"><img class="footer-logo" src="./img/logo.png" alt="logo" /></a>
+      <div class="footer-container">
+        <a class="footer-logo-link" href="./index.html"
+          ><img class="footer-logo" src="./img/logo.png" alt="logo"
+        /></a>
+        <a class="logo-small-footer-link" href="./index.html"
+          ><img class="logo-small-footer" src="./img/logo_small.png" alt=""
+        /></a>
 
-      <div class="social-container">
-        <a href="https://www.facebook.com/?locale=de_DE"><img class="social-links" src="./img/facebook.png"
-            alt="facebook" /></a>
-        <a href="https://www.instagram.com/"><img class="social-links" src="./img/instagram.png" alt="instagram" /></a>
-        <a href="http://www.linkedin.com/"><img class="social-links" src="./img/linkedin.png" alt="linkedin" /></a>
+        <div class="social-container">
+          <a href="https://www.facebook.com/?locale=de_DE"
+            ><img class="social-links" src="./img/facebook.png" alt="facebook"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img
+              class="social-links"
+              src="./img/instagram.png"
+              alt="instagram"
+          /></a>
+          <a href="http://www.linkedin.com/"
+            ><img class="social-links" src="./img/linkedin.png" alt="linkedin"
+          /></a>
+        </div>
+        <div class="footer-links-container">
+          <a class="footer-links" href="./impressum.html">Impressum</a>
+          <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
+          <p class="copyright">&copy; 2025 Kochwelt</p>
+        </div>
       </div>
-      <div class="footer-links-container">
-        <a class="footer-links" href="./impressum.html">Impressum</a>
-        <a class="footer-links" href="./datenschutz.html">Datenschutz</a>
-        <p class="copyright">&copy; 2025 Kochwelt</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 <script src="./script-nil.js"></script>
-
+<script src="./script.js"></script>
 </html>
