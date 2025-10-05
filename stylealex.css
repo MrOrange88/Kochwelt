@@ -138,3 +138,21 @@
     font-size: 16px;
     align-items: center;
 }
+@media (max-width: 1150px) {
+    .preparation-container {
+        height: auto;
+        padding-bottom: 0px;
+    }
+}
+@media (max-width: 650px) {
+    .section-nutrition {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+@media (max-width: 490px) {
+    .section-recipe-icons {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
