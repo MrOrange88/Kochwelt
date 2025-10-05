@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: all 100ms ease-in-out;
+  
 }
 
 h2 {
@@ -49,6 +50,11 @@ header {
 .header-logo {
   height: 64px;
   cursor: pointer;
+}
+.logo-small {
+  height: 48px;
+  cursor: pointer;
+  
 }
 
 .privacy {
@@ -82,6 +88,15 @@ nav :hover {
 nav a {
   text-decoration: none;
   color: black;
+}
+.menu-open-close {
+  background-color: #008000;
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: 0;
+  font-family: Raleway, sans-serif;
+  cursor: pointer;
 }
 
 li {
@@ -307,6 +322,20 @@ textarea {
   margin-top: 24px;
   margin-bottom: 100px;
 }
+.responsive-menu {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+}
+.closed-menu {
+    display: none;
+}
+
 @media (max-width: 1150px) {
   .aot-img {
     width: 300px;
@@ -324,6 +353,54 @@ textarea {
     height: 200px;
   }
 }
+
+@media (min-width: 951px) {
+  .menu-open-close {
+    display: none;
+
+  }
+  .closed-menu {
+    display: none;
+
+}
+.logo-small {
+    display: none;
+  }
+  .logo-small-footer {
+    display: none;
+  }
+}
+ @media (max-width: 950px) {
+    nav a {
+        display: none;
+        
+    }
+    nav button {
+        text-decoration: none;
+        color: white;
+    }
+    
+
+    }
+.header-logo {
+    display: none;
+  }
+  
+  header {
+    justify-content: normal;
+}
+.footer-logo {
+    display: none;
+  }
+.footer-logo-link {
+    display: none;
+  }
+.logo-small-footer {
+        height: 48px;
+        filter: invert(1);
+        cursor: pointer;
+    }
+
 
 @media (max-width: 800px) {
   .aot-container {
@@ -359,6 +436,8 @@ textarea {
     height: 200px;
   }
 }
+
+
 
 @media (max-width: 500px) {
   .aot-container {
@@ -401,4 +480,10 @@ textarea {
     align-items: center;
     
   }
+  .footer-links-container {
+    display: none;
+  }
+  .footer-container {
+    justify-content: space-between;
+}
 }
