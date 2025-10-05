@@ -391,4 +391,14 @@ textarea {
     width: 200px;
     height: 150px;
   }
+  .form-label input {
+    width: 200px;
+    align-items: center;
+  }
+  .form-label textarea {
+    width: 220px;
+    height: 48px;
+    align-items: center;
+    
+  }
 }
