@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rezept des Tages</title>
+    <link rel="stylesheet" href="./style_chris.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
   </head>
@@ -22,7 +23,90 @@
         </nav>
       </div>
     </header>
-    <main></main>
+
+    <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__image">
+        <img src="./img/Mohntorte.png" alt="Waldviertler Mohntorte - Symbolbild" />
+      </div>
+      <div class="hero__text">
+        <p class="kicker">Kuchen &amp; Torten</p>
+        <h1>Waldviertler Mohntorte</h1>
+        <p class="hero__note">Saftig, nussig und mit Zuckerglasur - perfekt zum Nachmittagskaffee.</p>
+        <div class="hero__actions">
+          <a href="#zutaten" class="ck-btn ck-btn--primary">Zum Rezept</a>
+          <button class="ck-btn" onclick="window.print()">🖨 Drucken</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Body ===== -->
+  <main class="ck-container">
+    <div class="ck-meta">
+      <span class="ck-chip">⏱️ Vorbereitung: 20 Min.</span>
+      <span class="ck-chip">🔥 Backzeit: 40 Min.</span>
+      <span class="ck-chip">🍰 <strong id="ck-yield">12</strong> Portionen</span>
+      <span class="ck-chip ck-chip--easy">gelingt leicht</span>
+    </div>
+
+    <div class="ck-grid">
+      <!-- Zutaten -->
+      <aside class="ck-card" id="zutaten">
+        <div class="ck-card__header">
+          <h2>Zutaten</h2>
+          <div class="ck-servings">
+            <button class="ck-btn ck-btn--icon" id="ck-minus" type="button">-</button>
+            <input id="ck-servings" type="number" inputmode="numeric" min="1" step="1" value="12" />
+            <button class="ck-btn ck-btn--icon" id="ck-plus" type="button">+</button>
+          </div>
+        </div>
+
+        <!-- Vorbefüllte Basis-Mengen (12 Portionen) -->
+        <ul class="ck-ingredients" id="ck-ingredient-list">
+          <!-- Sandmasse -->
+          <li data-qty="140" data-unit="g"><span class="ck-qty">140 g</span> weiche Butter</li>
+          <li data-qty="140" data-unit="g"><span class="ck-qty">140 g</span> Staubzucker (gesiebt)</li>
+          <li data-qty="1"   data-unit="Pck."><span class="ck-qty">1 Pck.</span> Vanillezucker</li>
+          <li data-qty="1"   data-unit="Prise"><span class="ck-qty">1 Prise</span> Salz</li>
+          <li data-qty="4"   data-unit="Stk"><span class="ck-qty">4 Stk</span> Dotter (Größe M)</li>
+          <li data-qty="240" data-unit="g"><span class="ck-qty">240 g</span> frisch gemahlener Graumohn</li>
+          <li data-qty="80"  data-unit="g"><span class="ck-qty">80 g</span> geriebene Haselnüsse</li>
+          <li data-qty="30"  data-unit="ml"><span class="ck-qty">30 ml</span> Weißwein</li>
+          <li data-qty="4"   data-unit="Stk"><span class="ck-qty">4 Stk</span> Eiklar (Größe M)</li>
+          <li data-qty="120" data-unit="g"><span class="ck-qty">120 g</span> Zucker</li>
+          <!-- Bestreichen -->
+          <li data-qty="4"   data-unit="EL"><span class="ck-qty">4 EL</span> passierte Marillenmarmelade</li>
+          <li data-qty="2"   data-unit="EL"><span class="ck-qty">2 EL</span> Wasser</li>
+          <!-- Glasur -->
+          <li data-qty="200" data-unit="g"><span class="ck-qty">200 g</span> Staubzucker (gesiebt)</li>
+          <li data-qty="3"   data-unit="EL"><span class="ck-qty">3 EL</span> Zitronensaft</li>
+        </ul>
+
+        <div class="ck-note">Tipp: Springform (Ø 26 cm) gut befetten und leicht bemehlen.</div>
+        <div class="ck-actions">
+          <button class="ck-btn ck-btn--primary" onclick="window.print()">🖨 Drucken</button>
+          <button class="ck-btn" type="button" id="btnList">🧾 Einkaufsliste</button>
+        </div>
+      </aside>
+
+      <!-- Zubereitung -->
+      <section class="ck-card">
+        <h2>Zubereitung</h2>
+        <ol class="ck-steps">
+          <li>Butter mit Zucker, Vanillezucker und Salz cremig rühren. Dotter nacheinander unterrühren.</li>
+          <li>Mohn, Haselnüsse und Weißwein einrühren.</li>
+          <li>Eiklar mit Zucker steif schlagen und vorsichtig unterheben.</li>
+          <li>Masse in befettete, bemehlte Springform (Ø 26&nbsp;cm) füllen und glatt streichen.</li>
+          <li>Bei 170&nbsp;°C Ober-/Unterhitze (oder 160&nbsp;°C Heißluft) ca. 40&nbsp;Min. backen. Auskühlen lassen.</li>
+          <li>Marmelade mit Wasser kurz aufkochen, die erkaltete Torte damit bestreichen.</li>
+          <li>Staubzucker mit Zitronensaft dickflüssig anrühren und die Torte glasieren.</li>
+        </ol>
+        <div class="ck-hint">Für extra Glanz die Glasur nach dem Antrocknen ein zweites Mal dünn auftragen.</div>
+      </section>
+    </div>
+  </main>
 
     <footer>
       <div class="footer-container">
