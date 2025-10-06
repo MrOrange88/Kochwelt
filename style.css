@@ -16,6 +16,7 @@
 main {
   display: flex;
   flex: 1;
+  
 }
 
 body {
@@ -25,6 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: all 100ms ease-in-out;
+  overflow-x: hidden;
 }
 
 h2 {
