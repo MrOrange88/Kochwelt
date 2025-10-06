@@ -116,7 +116,7 @@ nav a {
   flex-direction: column;
   width: 180px;
   height: 100px;
-  position: absolute;
+  position: fixed;
   top: 80px;
   right: 0px;
   transform: translateX(0%);
