@@ -82,6 +82,7 @@
   border-radius: 8px;
   cursor: pointer;
   border: none;
+  transition: all 100ms ease-in-out;
 }
 .buttons:hover {
   background-color: #0ab80a;
