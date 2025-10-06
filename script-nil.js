@@ -73,10 +73,10 @@ function sync_ingredient_5() {
 
 function sync_ingredient_6() {
   let input = document.getElementById("portion_value").value;
-  let current = Math.max(1, parseInt(input, 10));
+  let current = Math.max(1, parseFloat(input, 10));
   let element = document.querySelector(".ingredient_6");
   let data = element.getAttribute("data-base");
-  let data_number = parseInt(data, 10);
+  let data_number = parseFloat(data, 10);
   let result = current * data_number;
   element.textContent = result;
 }

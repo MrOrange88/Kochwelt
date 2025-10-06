@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zucchini-Zitronen-Spaghetti</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-nil.css" />
+    <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zuccini-Zitronen-Spaghetti</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./style-nil.css" />
-  <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
-</head>
-
-<body>
-  <header>
+  <body>
+    <header>
       <div class="header-container">
         <a href="./index.html"
           ><img class="header-logo" src="./img/logo.png" alt="Kochwelt Logo"
         /></a>
-        <img class="logo-small" src="./img/logo_small.png" alt="" />
+        <a href="./index.html">
+          <img
+            class="logo-small"
+            src="./img/logo_small.png"
+            alt="Kochwelt Logo klein"
+          />
+        </a>
         <nav>
           <li><a href="./index.html">Start</a></li>
           <li><a href="./rezept-chris.html">Rezept des Tages</a></li>
@@ -33,156 +38,187 @@
         <li><a href="./datenschutz.html">Datenschutz</a></li>
       </div>
     </header>
-  <main class="recipe-nil-main">
-    <section class="recipe-nil-section">
-      <h1>Zuccini-Zitronen-Spaghetti</h1>
-      <img class="recipe-img" src="./img/Zuccini-Zitronen-Spaghetti.png" alt="Bild Zuccini-Zitronen-Spaghetti">
-    </section>
-    <section class="recipe-nil-section-icons">
-      <div class="icons-container">
-        <img src="./img/icons/clock-regular.svg" alt="Uhr icon">
-        <p>Zubereitungszeit: 25 Min</p>
-      </div>
-      <div class="icons-container">
-        <img src="./img/icons/brain-solid.svg" alt="Hirn icon">
-        <p>normal</p>
-      </div>
-      <div class="icons-container">
-        <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender icon">
-        <p>30.09.2025</p>
-      </div>
-    </section>
-    <section class="ingredients-section">
-      <h2>Zutaten:</h2>
-      <div class="ingredients-container">
-        <div class="ingredients-per-person-container">
-          <div class="persons-number-container">
-            <p> Für <span id="portion">2</span> Portion(en)</p>
+    <main class="recipe-nil-main">
+      <section class="recipe-nil-section">
+        <h1>Zucchini-Zitronen-Spaghetti</h1>
+        <img
+          class="recipe-img"
+          src="./img/Zuccini-Zitronen-Spaghetti.png"
+          alt="Bild Zuccini-Zitronen-Spaghetti"
+        />
+      </section>
+      <section class="recipe-nil-section-icons">
+        <div class="icons-container">
+          <img src="./img/icons/clock-regular.svg" alt="Uhr icon" />
+          <p>Zubereitungszeit: 25 Min</p>
+        </div>
+        <div class="icons-container">
+          <img src="./img/icons/brain-solid.svg" alt="Hirn icon" />
+          <p>normal</p>
+        </div>
+        <div class="icons-container">
+          <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender icon" />
+          <p>30.09.2025</p>
+        </div>
+      </section>
+      <section class="ingredients-section">
+        <h2>Zutaten:</h2>
+        <div class="ingredients-container">
+          <div class="ingredients-per-person-container">
+            <div class="persons-number-container">
+              <p>Für <span id="portion">2</span> Portion(en)</p>
+            </div>
+            <div class="persons-number-buttons-container">
+              <button
+                class="buttons"
+                id="add"
+                onclick="decrease_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()"
+              >
+                -
+              </button>
+              <input
+                type="text"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                value="1"
+                title="12 max"
+                id="portion_value"
+              />
+              <button
+                class="buttons"
+                id="remove"
+                onclick="increase_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()"
+              >
+                +
+              </button>
+            </div>
           </div>
-          <div class="persons-number-buttons-container">
-            <button class="buttons" id="add" onclick="increase_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()">+</button>
-            <input type="text" inputmode="numeric" max="12" min="1" value="2" title="12 max" id="portion_value">
-            <button class="buttons" id="remove" onclick="decrease_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()">-</button>
+          <div class="ingredients-table-container">
+            <table>
+              <tr class="table-slot">
+                <td><span class="ingredient_1" data-base="125">125</span>g</td>
+                <td>Spaghetti</td>
+              </tr>
+              <tr>
+                <td><span class="ingredient_2" data-base="175">175</span>g</td>
+                <td>Zucchini</td>
+              </tr>
+              <tr class="table-slot">
+                <td><span class="ingredient_3" data-base="1">1</span></td>
+                <td>Zitrone(n)</td>
+              </tr>
+              <tr>
+                <td><span class="ingredient_4" data-base="50">50</span>ml</td>
+                <td>Gemüsebrühe</td>
+              </tr>
+              <tr class="table-slot">
+                <td><span class="ingredient_5" data-base="1">1</span>EL</td>
+                <td>Olivenöl</td>
+              </tr>
+              <tr>
+                <td><span class="ingredient_6" data-base="0.5">0.5</span>TL</td>
+                <td>Thymian(getrocknet)</td>
+              </tr>
+              <tr class="table-slot">
+                <td><span class="ingredient_7" data-base="50">50</span>g</td>
+                <td>Feta-Käse</td>
+              </tr>
+              <tr>
+                <td><span class="ingredient_8" data-base="1">1</span></td>
+                <td>Knoblauchzehe(n)</td>
+              </tr>
+              <tr class="table-slot">
+                <td>Salz und<br />Pfeffer</td>
+                <td>nach Geschmack</td>
+              </tr>
+              <tr>
+                <td>evtl.</td>
+                <td>Kräutersalz</td>
+              </tr>
+            </table>
           </div>
         </div>
-        <div class="ingredients-table-container">
-          <table>
-            <tr class="table-slot">
-              <td><span class="ingredient_1" data-base="125">125</span>g</td>
-              <td>Spaghetti</td>
-            </tr>
-            <tr>
-              <td><span class="ingredient_2" data-base="175">175</span>g</td>
-              <td>Zucchini</td>
-            </tr>
-            <tr class="table-slot">
-             <td><span class="ingredient_3" data-base="1">1</span></td>
-              <td>Zitrone(n)</td>
-            </tr>
-            <tr>
-              <td><span class="ingredient_4" data-base="50">50</span>ml</td>
-              <td>Gemüsebrühe</td>
-            </tr>
-            <tr class="table-slot">
-              <td><span class="ingredient_5" data-base="1">1</span>EL</td>
-              <td>Olivenöl</td>
-            </tr>
-            <tr>
-              <td><span class="ingredient_6" data-base="0.5">0.5</span>TL</td>
-              <td>Thymian(getrocknet)</td>
-            </tr>
-            <tr class="table-slot">
-              <td><span class="ingredient_7" data-base="50">50</span>g</td>
-              <td>Feta-Käse</td>
-            </tr>
-            <tr>
-              <td><span class="ingredient_8" data-base="1">1</span></td>
-              <td>Knoblauchzehe(n)</td>
-            </tr>
-            <tr class="table-slot">
-              <td>Salz und<br>Pfeffer</td>
-              <td>nach Geschmack</td>
-            </tr>
-            <tr>
-              <td>evtl.</td>
-              <td>Kräutersalz</td>
-            </tr>
-          </table>
+      </section>
+      <section class="preparation-section">
+        <h2>Zubereitung:</h2>
+        <ol class="preparation-steps">
+          <li>
+            <span>
+              Zitronen waschen, abtrocknen und die Schale mit einem Zestenreißer
+              in feine Streifen abziehen. Den Saft auspressen. Knoblauch schälen
+              und fein hacken. Zucchini in etwa 3 cm lange Stifte schneiden.
+            </span>
+          </li>
+          <li>
+            <span>
+              In einem großen Topf ca. 5 l Wasser mit 5 TL Salz und fast dem
+              gesamten Zitronensaft zum Kochen bringen. Nudeln darin bissfest
+              garen. Kurz vor Ende der Kochzeit die Zitronenzesten zufügen.
+            </span>
+          </li>
+          <li>
+            <span>
+              Öl in einer beschichteten Pfanne erhitzen, Zucchini darin
+              anbraten. Knoblauch und Thymian hinzufügen, mit Salz und Pfeffer
+              würzen. Brühe und restlichen Zitronensaft zugießen und zugedeckt
+              ca. 5 Minuten garen.
+            </span>
+          </li>
+          <li>
+            <span>
+              Nudeln abgießen, abtropfen lassen und mit den Zucchini mischen.
+              Mit zerbröckeltem Feta bestreuen.
+            </span>
+          </li>
+          <li class="preparation-tipp">
+            <span>
+              Feta kann nach Belieben durch Mozzarella oder Ziegenfrischkäse
+              ersetzt werden.
+            </span>
+          </li>
+        </ol>
+      </section>
+      <section class="nutritional-values-section">
+        <h2>Nährwerte pro Portion:</h2>
+        <div class="nutritional-values-container">
+          <div class="nutritional-values-box">
+            <p class="nutritional-values-number">353</p>
+            <p class="nutritional-values-text">kcal</p>
+          </div>
+          <div class="nutritional-values-box">
+            <p class="nutritional-values-number">13.72g</p>
+            <p class="nutritional-values-text">Eiweiß</p>
+          </div>
+          <div class="nutritional-values-box">
+            <p class="nutritional-values-number">47.68g</p>
+            <p class="nutritional-values-text">Kohlenhydrate</p>
+          </div>
+          <div class="nutritional-values-box">
+            <p class="nutritional-values-number">11.02g</p>
+            <p class="nutritional-values-text">Fett</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="preparation-section">
-      <h2>Zubereitung:</h2>
-      <ol class="preparation-steps">
-        <li>
-          <span>
-            Zitronen waschen, abtrocknen und die Schale mit einem Zestenreißer in feine Streifen abziehen. Den Saft
-            auspressen. Knoblauch schälen und fein hacken. Zucchini in etwa 3 cm lange Stifte schneiden.
-          </span>
-        </li>
-        <li>
-          <span>
-            In einem großen Topf ca. 5 l Wasser mit 5 TL Salz und fast dem gesamten Zitronensaft zum Kochen bringen.
-            Nudeln darin bissfest garen. Kurz vor Ende der Kochzeit die Zitronenzesten zufügen.
-          </span>
-        </li>
-        <li>
-          <span>
-            Öl in einer beschichteten Pfanne erhitzen, Zucchini darin anbraten. Knoblauch und Thymian hinzufügen, mit
-            Salz
-            und Pfeffer würzen. Brühe und restlichen Zitronensaft zugießen und zugedeckt ca. 5 Minuten garen.
-          </span>
-        </li>
-        <li>
-          <span>
-            Nudeln abgießen, abtropfen lassen und mit den Zucchini mischen. Mit zerbröckeltem Feta bestreuen.
-          </span>
-        </li>
-        <li class="preparation-tipp">
-          <span>
-            Feta kann nach Belieben durch Mozzarella oder Ziegenfrischkäse ersetzt werden.
-          </span>
-        </li>
-      </ol>
-    </section>
-    <section class="nutritional-values-section">
-      <h2>Nährwerte pro Portion:</h2>
-      <div class="nutritional-values-container">
-        <div class="nutritional-values-box">
-          <p class="nutritional-values-number">353</p>
-          <p class="nutritional-values-text">kcal</p>
+      </section>
+      <section class="recipe-created-by">
+        <h3>Rezept erstellt von:</h3>
+        <div class="profile-container">
+          <img src="./img/profile.png" alt="Profilbild" />
+          <p>Nil V.</p>
         </div>
-        <div class="nutritional-values-box">
-          <p class="nutritional-values-number">13.72g</p>
-          <p class="nutritional-values-text">Eiweiß</p>
-        </div>
-        <div class="nutritional-values-box">
-          <p class="nutritional-values-number">47.68g</p>
-          <p class="nutritional-values-text">Kohlenhydrate</p>
-        </div>
-        <div class="nutritional-values-box">
-          <p class="nutritional-values-number">11.02g</p>
-          <p class="nutritional-values-text">Fett</p>
-        </div>
-      </div>
+      </section>
+    </main>
 
-    </section>
-    <section class="recipe-created-by">
-      <h3>Rezept erstellt von:</h3>
-      <div class="profile-container">
-      <img src="./img/profile.png" alt="Profilbild">
-      <p>Nil V.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
+    <footer>
       <div class="footer-container">
         <a class="footer-logo-link" href="./index.html"
           ><img class="footer-logo" src="./img/logo.png" alt="logo"
         /></a>
         <a class="logo-small-footer-link" href="./index.html"
-          ><img class="logo-small-footer" src="./img/logo_small.png" alt=""
+          ><img
+            class="logo-small-footer"
+            src="./img/logo_small.png"
+            alt="logo klein"
         /></a>
 
         <div class="social-container">
@@ -206,7 +242,7 @@
         </div>
       </div>
     </footer>
-</body>
-<script src="./script-nil.js"></script>
-<script src="./script.js"></script>
+  </body>
+  <script src="./script-nil.js"></script>
+  <script src="./script.js"></script>
 </html>

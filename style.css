@@ -414,6 +414,7 @@ textarea {
     height: 48px;
     filter: invert(1);
     cursor: pointer;
+    padding-top: 4px;
   }
 }
 

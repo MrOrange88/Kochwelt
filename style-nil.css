@@ -1,238 +1,234 @@
 .recipe-nil-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .recipe-nil-section {
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 16px;
-
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 16px;
 }
 
 .recipe-img {
-    width: 80vw;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 16px;
+  width: 80vw;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .recipe-nil-section-icons {
-    width: 80vw;
-    display: flex;
-    gap: 16px;
-    padding-top: 16px;
-
+  width: 80vw;
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  flex-wrap: wrap;
 }
 
 .recipe-nil-section-icons img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .icons-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #EFEFEF;
-    padding: 6px;
-    border-radius: 8px;
-
-
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #efefef;
+  padding: 6px;
+  border-radius: 8px;
 }
 
 .icons-container p {
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .ingredients-section {
-    width: 80vw;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-
+  width: 80vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .ingredients-container {
-    width: 50vw;
-    background-color: #EFEFEF;
-    border-radius: 16px;
-
+  width: 50vw;
+  background-color: #efefef;
+  border-radius: 16px;
 }
 
 .ingredients-per-person-container {
-
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .persons-number-buttons-container {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .buttons {
-    width: 32px;
-    height: 32px;
-    background-color: #0ab80a;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-
+  width: 32px;
+  height: 32px;
+  background-color: #008000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
 }
 .buttons:hover {
-    background-color: #0a9f0a;
+  background-color: #0ab80a;
 }
 
 .persons-number-buttons-container input {
-    width: 28px;
-    height: 28px;
-    text-align: center;
-    border: 1px solid #000000;
-    border-radius: 8px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 8px;
 }
 
 .persons-number-container span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .ingredients-table-container {
-    width: 50vw;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
+  width: 50vw;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .ingredients-section table {
-    border-collapse: separate;
-    border-spacing: 0;
-    width: 40vw;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 40vw;
 }
 
 .ingredients-section table tr td:first-child {
-    padding-right: 32px;
-    padding-left: 16px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+  padding-right: 26px;
+  padding-left: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .ingredients-section table tr td:last-child {
-    padding-right: 16px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+  padding-right: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .table-slot {
-    background-color: #10ef1040;
+  background-color: #10ef1040;
 }
 
 .preparation-section {
-    width: 80vw;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-
+  width: 80vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .preparation-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .preparation-steps ol {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .preparation-steps li {
-    list-style: decimal;
-    padding-left: 4px;
+  list-style: decimal;
+  padding-left: 4px;
 }
 
 .preparation-steps li::marker {
-    font-weight: bold;
-    padding-right: 16px;
+  font-weight: bold;
+  padding-right: 16px;
 }
 
 .preparation-steps p {
-    padding-left: 16px;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  padding-left: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 ol li.preparation-tipp {
-    list-style-type: none;
-    position: relative;
+  list-style-type: none;
+  position: relative;
 }
 
 ol li.preparation-tipp::before {
-    content: "Tipp:";
-    font-weight: bold;
-    position: absolute;
-    left: -2.5em;
-
+  content: "Tipp:";
+  font-weight: bold;
+  position: absolute;
+  left: -2.5em;
 }
 
 .nutritional-values-section {
-    width: 80vw;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: 48px;
-
+  width: 80vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 48px;
 }
 
 .nutritional-values-container {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .nutritional-values-box {
-    display: flex;
-    gap: 4px;
-    border-radius: 8px;
-    background-color: #EFEFEF;
+  display: flex;
+  gap: 4px;
+  border-radius: 8px;
+  background-color: #efefef;
 }
 
 .nutritional-values-box p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 8px;
-    font-weight: bold;
-
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 8px;
+  font-weight: bold;
 }
 
 .recipe-created-by {
-    width: 80vw;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: 80px;
+  width: 80vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 80px;
 }
 
 .profile-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .profile-container img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+@media (max-width: 650px) {
+  .ingredients-container {
+    width: 80vw;
+  }
+  .ingredients-table-container {
+    width: 80vw;
+  }
 }
