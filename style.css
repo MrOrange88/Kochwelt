@@ -416,9 +416,8 @@ textarea {
   .header-logo {
     display: none;
   }
-
-  header {
-    justify-content: normal;
+  .kochwelt-logo-link {
+    display: none;
   }
   .footer-logo {
     display: none;
