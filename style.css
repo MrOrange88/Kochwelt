@@ -431,6 +431,9 @@ textarea {
     cursor: pointer;
     padding-top: 4px;
   }
+  .aot-text-container {
+    text-align: center;
+  }
 }
 
 @media (max-width: 800px) {

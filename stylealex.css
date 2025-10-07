@@ -149,6 +149,9 @@
         flex-direction: column;
         gap: 0px;
     }
+    .recipe-img {
+        height: 200px;
+    }
 }
 @media (max-width: 490px) {
     .section-recipe-icons {
