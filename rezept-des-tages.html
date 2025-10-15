@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rezept des Tages</title>
-    <link rel="stylesheet" href="./style-nil.css" />
+    <link rel="stylesheet" href="./style-rezept-des-tages.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/png" href="./img/icons/favicon.ico" />
   </head>
@@ -60,163 +60,167 @@
           <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender icon" />
           <p>30.09.2025</p>
         </div>
+        <button onclick="drucken()" class="icons-container printer-button">
+          <img class="printer-icon" src="./img/printer.png" alt="printer icon" />
+          <p>Drucken</p>
+        </button>
       </section>
       <section class="ingredients-section">
-        <h2>Zutaten:</h2>
-        <div class="ingredients-container">
-          <div class="ingredients-per-person-container">
-            <div class="persons-number-container">
-              <p>Für <span id="portion">2</span> Portion(en)</p>
-            </div>
-            <div class="persons-number-buttons-container">
-              <button
-                class="buttons"
-                id="add"
-                onclick="decrease_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()"
-              >
-                -
-              </button>
-              <input
-                type="text"
-                inputmode="numeric"
-                max="12"
-                min="1"
-                value="1"
-                title="12 max"
-                id="portion_value"
-                required
-              />
-              <button
-                class="buttons"
-                id="remove"
-                onclick="increase_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8()"
-              >
-                +
-              </button>
-            </div>
+        <div>
+          <h2>Zubereitung:</h2>
+          <div class="preparation-steps">
+            <h3>SCHRITT 1</h3>
+              <span>
+                Zunächst den Lachs würfeln und im Olivenöl rundum kurz anbraten,
+                dann herausnehmen.
+              </span>
+              <h3>SCHRITT 2</h3>
+              <span>
+                Die gehackten Schalotten in die Pfanne geben. Kurz anschwitzen,
+                bis sie glasig sind. Dann zwei Knoblauch hineinpressen und
+                direkt mit dem Weißwein ablöschen. Den Wein bis zur Hälfte
+                reduzieren, dann die Gemüsebrühe dazugeben. Dies ca. weitere 5
+                Minuten köcheln lassen.
+              </span>
+              <h3>SCHRITT 3</h3>
+              <span>
+                Anschließend Dosentomaten und Tomatenmark beifügen. Ordentlich
+                mit Salz und Pfeffer würzen. Den Saft der halben Limette
+                dazugeben, die Sauce abschmecken und evtl. nach Belieben noch
+                eine Zehe Knoblauch hineinpressen. Nach ca. 5 Minuten die Sahne
+                darüber gießen und den Lachs wieder in die Sauce legen. Nochmal
+                kurz aufkochen lassen.
+              </span>
+              <h3>SCHRITT 4</h3>
+              <span>
+                Die zwischenzeitlich gekochten Tagliatelle in die Sauce geben
+                und kurz darin ziehen lassen, damit sie etwas Sauce aufnehmen
+                können.
+              </span>
+              <h3>SCHRITT 5</h3>
+              <span>
+                Gehackten Dill und Petersilie darüber streuen und mit etwas
+                Fleur de Sel bestreut servieren.
+              </span>
           </div>
+        </div>
 
-          <div class="ingredients-table-container">
-            <table>
-              <tr class="table-slot">
-                <td>
-                  <span class="ingredient_1" data-base="62,5">62,5</span>g
-                </td>
-                <td>Frischer Lachs</td>
-              </tr>
-              <tr>
-                <td><span class="ingredient_2" data-base="0,5">0,5</span>EL</td>
-                <td>Olivenöl</td>
-              </tr>
-              <tr class="table-slot">
-                <td><span class="ingredient_3" data-base="0,5">0,5</span></td>
-                <td>Schalotte(n)</td>
-              </tr>
-              <tr>
-                <td><span class="ingredient_4" data-base="50">50</span>ml</td>
-                <td>Weißwein</td>
-              </tr>
-              <tr class="table-slot">
-                <td><span class="ingredient_5" data-base="1">1</span></td>
-                <td>Knoblauchzehe(n)</td>
-              </tr>
-              <tr>
-                <td><span class="ingredient_6" data-base="0.25">0.25</span></td>
-                <td>Limette(n), Saft davon</td>
-              </tr>
-              <tr class="table-slot">
-                <td><span class="ingredient_7" data-base="50">50</span>ml</td>
-                <td>Gemüsebrühe</td>
-              </tr>
-              <tr>
-                <td><span class="ingredient_8" data-base="100">100</span>g</td>
-                <td>Tomaten</td>
-              </tr>
-              <tr class="table-slot">
-                <td><span class="ingredient_9" data-base="0,5">0,5</span>TL</td>
-                <td>Tomatenmark</td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="ingredient_10" data-base="0,25">0,25</span>,Saft
-                  davon
-                </td>
-                <td>Limette</td>
-              </tr>
-              <tr class="table-slot">
-                <td><span class="ingredient_11" data-base="50">50</span>ml</td>
-                <td>Sahne</td>
-              </tr>
-              <tr>
-                <td><span class="ingredient_12" data-base="125">125</span>g</td>
-                <td>Tagliatelle</td>
-              </tr>
-              <tr class="table-slot">
-                <td>
-                  <span class="ingredient_13" data-base="0,25">0,25</span>TL
-                </td>
-                <td>Dill</td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="ingredient_14" data-base="0,5">0,5</span>El
-                </td>
-                <td>Petersilie</td>
-              </tr>
-              <tr class="table-slot">
-                <td>Salz und<br />Pfeffer</td>
-                <td>nach Geschmack</td>
-              </tr>
-              <tr>
-                <td>evtl.</td>
-                <td>Kräutersalz</td>
-              </tr>
-            </table>
+        <div class="sticky-container">
+          <h2>Zutaten:</h2>
+          <div class="ingredients-container">
+            <div class="ingredients-per-person-container">
+              <div class="persons-number-container">
+                <p>Für <span id="portion">2</span> Portion(en)</p>
+              </div>
+              <div class="persons-number-buttons-container">
+                <button
+                  class="buttons"
+                  id="add"
+                  onclick="decrease_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8(),sync_ingredient_9(),sync_ingredient_10(),sync_ingredient_11(),sync_ingredient_12(),sync_ingredient_13()"
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  max="12"
+                  min="1"
+                  value="1"
+                  title="12 max"
+                  id="portion_value"
+                  required
+                />
+                <button
+                  class="buttons"
+                  id="remove"
+                  onclick="increase_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8(),sync_ingredient_9(),sync_ingredient_10(),sync_ingredient_11(),sync_ingredient_12(),sync_ingredient_13()"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="ingredients-table-container">
+              <table>
+                <tr class="table-slot">
+                  <td>
+                    <span class="ingredient_1" data-base="62.5">62.5</span>g
+                  </td>
+                  <td>Frischer Lachs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="ingredient_2" data-base="0.5">0.5</span>EL
+                  </td>
+                  <td>Olivenöl</td>
+                </tr>
+                <tr class="table-slot">
+                  <td><span class="ingredient_3" data-base="0.5">0.5</span></td>
+                  <td>Schalotte(n)</td>
+                </tr>
+                <tr>
+                  <td><span class="ingredient_4" data-base="50">50</span>ml</td>
+                  <td>Weißwein</td>
+                </tr>
+                <tr class="table-slot">
+                  <td><span class="ingredient_5" data-base="1">1</span></td>
+                  <td>Knoblauchzehe(n)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="ingredient_6" data-base="0.25">0.25</span></td>
+                  <td>Limette(n), Saft davon</td>
+                </tr>
+                <tr class="table-slot">
+                  <td><span class="ingredient_7" data-base="50">50</span>ml</td>
+                  <td>Gemüsebrühe</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="ingredient_8" data-base="100">100</span>g
+                  </td>
+                  <td>Tomaten</td>
+                </tr>
+                <tr class="table-slot">
+                  <td>
+                    <span class="ingredient_9" data-base="0.5">0.5</span>TL
+                  </td>
+                  <td>Tomatenmark</td>
+                </tr>
+                <tr >
+                  <td>
+                    <span class="ingredient_10" data-base="50">50</span>ml
+                  </td>
+                  <td>Sahne</td>
+                </tr>
+                <tr class="table-slot">
+                  <td>
+                    <span class="ingredient_11" data-base="125">125</span>g
+                  </td>
+                  <td>Tagliatelle</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="ingredient_12" data-base="0.25">0.25</span>TL
+                  </td>
+                  <td>Dill</td>
+                </tr>
+                <tr class="table-slot">
+                  <td>
+                    <span class="ingredient_13" data-base="0.5">0.5</span>El
+                  </td>
+                  <td>Petersilie</td>
+                </tr>
+                <tr>
+                  <td>Salz und<br />Pfeffer</td>
+                  <td>nach Geschmack</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>
-      <section class="preparation-section">
-        <h2>Zubereitung:</h2>
-        <ol class="preparation-steps">
-          <li>
-            <span>
-              Zunächst den Lachs würfeln und im Olivenöl rundum kurz anbraten,
-              dann herausnehmen.
-            </span>
-          </li>
-          <li>
-            <span>
-              Die gehackten Schalotten in die Pfanne geben. Kurz anschwitzen,
-              bis sie glasig sind. Dann zwei Knoblauch hineinpressen und direkt
-              mit dem Weißwein ablöschen. Den Wein bis zur Hälfte reduzieren,
-              dann die Gemüsebrühe dazugeben. Dies ca. weitere 5 Minuten köcheln
-              lassen.
-            </span>
-          </li>
-          <li>
-            <span>
-              Anschließend Dosentomaten und Tomatenmark beifügen. Ordentlich mit
-              Salz und Pfeffer würzen. Den Saft der halben Limette dazugeben,
-              die Sauce abschmecken und evtl. nach Belieben noch eine Zehe
-              Knoblauch hineinpressen. Nach ca. 5 Minuten die Sahne darüber
-              gießen und den Lachs wieder in die Sauce legen. Nochmal kurz
-              aufkochen lassen.
-            </span>
-          </li>
-          <li>
-            <span>
-              Die zwischenzeitlich gekochten Tagliatelle in die Sauce geben und
-              kurz darin ziehen lassen, damit sie etwas Sauce aufnehmen können.
-            </span>
-          </li>
-          <li class="preparation-tipp">
-            <span>
-              Gehackten Dill und Petersilie darüber streuen und mit etwas Fleur
-              de Sel bestreut servieren.
-            </span>
-          </li>
-        </ol>
-      </section>
+      <section class="preparation-section"></section>
 
       <section class="nutritional-values-section">
         <h2>Nährwerte pro Portion:</h2>
@@ -244,6 +248,8 @@
         <div class="profile-container">
           <img src="./img/profile.png" alt="Profilbild" />
           <p>Nil V.</p>
+           <img src="./img/icons alex/Profil 1 .png" alt="Profilbild" />
+          <p>Alex V.</p>
         </div>
       </section>
     </main>
@@ -282,6 +288,6 @@
       </div>
     </footer>
   </body>
-  <script src="./script-nil.js"></script>
+  <script src="./script-rezept-des-tages.js"></script>
   <script src="./script.js"></script>
 </html>
