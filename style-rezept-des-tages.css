@@ -247,8 +247,8 @@ ol li.preparation-tipp::before {
 }
 
 .printer-button {
-  background-color: #008000;
-  color: rgb(0, 0, 0);
+  background-image: linear-gradient(178deg, #0ab80a, #000000);
+  color:  white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,7 +256,6 @@ ol li.preparation-tipp::before {
   cursor: pointer;
   border: none;
   transition: all 100ms ease-in-out;
-  font-weight: bold;
 }
 
 .printer-button:hover {
