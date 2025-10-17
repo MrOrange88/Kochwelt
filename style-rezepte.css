@@ -264,7 +264,7 @@ ol li.preparation-tipp::before {
 }
 
 @media (max-width: 550px) {
-  .ingredients-section {
+  .ingredients-and-preparation-section {
     flex-direction: column-reverse;
     align-items: center;
   }
