@@ -61,6 +61,7 @@ h3 {
 }
 
 .ingredients-section {
+  padding-top: 32px;
   width: 80vw;
   max-width: 1440px;
   display: flex;
@@ -255,8 +256,8 @@ ol li.preparation-tipp::before {
 }
 
 .printer-button {
-  background-image: linear-gradient(178deg, #0ab80a, #000000);
-  color:  white;
+  background-color: #008000;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
