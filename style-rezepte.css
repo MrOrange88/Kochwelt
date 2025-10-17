@@ -114,6 +114,7 @@ h3 {
 }
 .persons-number-container {
   padding-left: 8px;
+  padding-right: 8px;
 }
 
 .persons-number-container span {

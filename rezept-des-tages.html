@@ -60,7 +60,7 @@
           <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender icon" />
           <p>30.09.2025</p>
         </div>
-        <button onclick="drucken()" class="icons-container printer-button">
+        <button onclick="printRecipe()" class="icons-container printer-button">
           <img
             class="printer-icon"
             src="./img/printer.png"
@@ -119,7 +119,7 @@
                 <button
                   class="buttons"
                   id="add"
-                  onclick="decrease_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8(),sync_ingredient_9(),sync_ingredient_10(),sync_ingredient_11(),sync_ingredient_12(),sync_ingredient_13()"
+                  onclick="decreasePortion(),syncValues(),syncIngredient('.ingredient-1'),syncIngredient('.ingredient-2'),syncIngredient('.ingredient-3'),syncIngredient('.ingredient-4'),syncIngredient('.ingredient-5'),syncIngredient('.ingredient-6'),syncIngredient('.ingredient-7'),syncIngredient('.ingredient-8'),syncIngredient('.ingredient-9'),syncIngredient('.ingredient-10'),syncIngredient('.ingredient-11'),syncIngredient('.ingredient-12'),syncIngredient('.ingredient-13')"
                 >
                   -
                 </button>
@@ -131,13 +131,13 @@
                   min="1"
                   value="1"
                   title="12 max"
-                  id="portion_value"
+                  id="portion-value"
                   required
                 />
                 <button
                   class="buttons"
                   id="remove"
-                  onclick="increase_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8(),sync_ingredient_9(),sync_ingredient_10(),sync_ingredient_11(),sync_ingredient_12(),sync_ingredient_13()"
+                  onclick="increasePortion(),syncValues(),syncIngredient('.ingredient-1'),syncIngredient('.ingredient-2'),syncIngredient('.ingredient-3'),syncIngredient('.ingredient-4'),syncIngredient('.ingredient-5'),syncIngredient('.ingredient-6'),syncIngredient('.ingredient-7'),syncIngredient('.ingredient-8'),syncIngredient('.ingredient-9'),syncIngredient('.ingredient-10'),syncIngredient('.ingredient-11'),syncIngredient('.ingredient-12'),syncIngredient('.ingredient-13')"
                 >
                   +
                 </button>
@@ -148,71 +148,71 @@
               <table>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_1" data-base="62.5">62.5</span>g
+                    <span class="ingredient-1" data-base="62.5">62.5</span>g
                   </td>
                   <td>Frischer Lachs</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_2" data-base="0.5">0.5</span>EL
+                    <span class="ingredient-2" data-base="0.5">0.5</span>EL
                   </td>
                   <td>Olivenöl</td>
                 </tr>
                 <tr class="table-slot">
-                  <td><span class="ingredient_3" data-base="0.5">0.5</span></td>
+                  <td><span class="ingredient-3" data-base="0.5">0.5</span></td>
                   <td>Schalotte(n)</td>
                 </tr>
                 <tr>
-                  <td><span class="ingredient_4" data-base="50">50</span>ml</td>
+                  <td><span class="ingredient-4" data-base="50">50</span>ml</td>
                   <td>Weißwein</td>
                 </tr>
                 <tr class="table-slot">
-                  <td><span class="ingredient_5" data-base="1">1</span></td>
+                  <td><span class="ingredient-5" data-base="1">1</span></td>
                   <td>Knoblauchzehe(n)</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_6" data-base="0.25">0.25</span>
+                    <span class="ingredient-6" data-base="0.25">0.25</span>
                   </td>
                   <td>Limette(n), Saft davon</td>
                 </tr>
                 <tr class="table-slot">
-                  <td><span class="ingredient_7" data-base="50">50</span>ml</td>
+                  <td><span class="ingredient-7" data-base="50">50</span>ml</td>
                   <td>Gemüsebrühe</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_8" data-base="100">100</span>g
+                    <span class="ingredient-8" data-base="100">100</span>g
                   </td>
                   <td>Tomaten</td>
                 </tr>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_9" data-base="0.5">0.5</span>TL
+                    <span class="ingredient-9" data-base="0.5">0.5</span>TL
                   </td>
                   <td>Tomatenmark</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_10" data-base="50">50</span>ml
+                    <span class="ingredient-10" data-base="50">50</span>ml
                   </td>
                   <td>Sahne</td>
                 </tr>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_11" data-base="125">125</span>g
+                    <span class="ingredient-11" data-base="125">125</span>g
                   </td>
                   <td>Tagliatelle</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_12" data-base="0.25">0.25</span>TL
+                    <span class="ingredient-12" data-base="0.25">0.25</span>TL
                   </td>
                   <td>Dill</td>
                 </tr>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_13" data-base="0.5">0.5</span>El
+                    <span class="ingredient-13" data-base="0.5">0.5</span>El
                   </td>
                   <td>Petersilie</td>
                 </tr>

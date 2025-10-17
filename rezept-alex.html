@@ -60,7 +60,7 @@
           <img src="./img/icons/calendar-alt-regular.svg" alt="Kalender icon" />
           <p>30.09.2025</p>
         </div>
-        <button onclick="drucken()" class="icons-container printer-button">
+        <button onclick="printRecipe()" class="icons-container printer-button">
           <img
             class="printer-icon"
             src="./img/printer.png"
@@ -117,7 +117,7 @@
                 <button
                   class="buttons"
                   id="add"
-                  onclick="decrease_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8(),sync_ingredient_9(),sync_ingredient_10(),sync_ingredient_11(),sync_ingredient_12(),sync_ingredient_13()"
+                  onclick="decreasePortion(),syncValues(),syncIngredient('.ingredient-1'),syncIngredient('.ingredient-2'),syncIngredient('.ingredient-3'),syncIngredient('.ingredient-4'),syncIngredient('.ingredient-5'),syncIngredient('.ingredient-6'),syncIngredient('.ingredient-7'),syncIngredient('.ingredient-8'),syncIngredient('.ingredient-9')"
                 >
                   -
                 </button>
@@ -129,13 +129,13 @@
                   min="1"
                   value="1"
                   title="12 max"
-                  id="portion_value"
+                  id="portion-value"
                   required
                 />
                 <button
                   class="buttons"
                   id="remove"
-                  onclick="increase_portion(),sync_values(),sync_ingredient_1(),sync_ingredient_2(),sync_ingredient_3(),sync_ingredient_4(),sync_ingredient_5(),sync_ingredient_6(),sync_ingredient_7(),sync_ingredient_8(),sync_ingredient_9(),sync_ingredient_10(),sync_ingredient_11(),sync_ingredient_12(),sync_ingredient_13()"
+                  onclick="increasePortion(),syncValues(),syncIngredient('.ingredient-1'),syncIngredient('.ingredient-2'),syncIngredient('.ingredient-3'),syncIngredient('.ingredient-4'),syncIngredient('.ingredient-5'),syncIngredient('.ingredient-6'),syncIngredient('.ingredient-7'),syncIngredient('.ingredient-8'),syncIngredient('.ingredient-9')"
                 >
                   +
                 </button>
@@ -146,51 +146,51 @@
               <table>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_1" data-base="0.5">0.5</span>
+                    <span class="ingredient-1" data-base="0.5">0.5</span>
                   </td>
                   <td>Aubergine</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_2" data-base="0.5">0.5</span>
+                    <span class="ingredient-2" data-base="0.5">0.5</span>
                   </td>
                   <td>Zwiebel</td>
                 </tr>
                 <tr class="table-slot">
-                  <td><span class="ingredient_3" data-base="0.5">0.5</span></td>
+                  <td><span class="ingredient-3" data-base="0.5">0.5</span></td>
                   <td>Knoblauchzehe(n)</td>
                 </tr>
                 <tr>
-                  <td><span class="ingredient_4" data-base="0.5">0.5</span></td>
+                  <td><span class="ingredient-4" data-base="0.5">0.5</span></td>
                   <td>Peperoni</td>
                 </tr>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_5" data-base="100">100</span>g
+                    <span class="ingredient-5" data-base="100">100</span>g
                   </td>
                   <td>Chili-Cabanossi</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_6" data-base="1.5">1.5</span>El
+                    <span class="ingredient-6" data-base="1.5">1.5</span>El
                   </td>
                   <td>Olivenöl</td>
                 </tr>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_7" data-base="3">3</span>Stiele
+                    <span class="ingredient-7" data-base="3">3</span>Stiele
                   </td>
                   <td>Oregano</td>
                 </tr>
                 <tr>
                   <td>
-                    <span class="ingredient_8" data-base="212.5">212.5</span>g
+                    <span class="ingredient-8" data-base="212.5">212.5</span>g
                   </td>
                   <td>geschälte Tomaten</td>
                 </tr>
                 <tr class="table-slot">
                   <td>
-                    <span class="ingredient_9" data-base="0.5">0.5</span>TL
+                    <span class="ingredient-9" data-base="0.5">0.5</span>TL
                   </td>
                   <td>Nudeln (z.B. Spaghetti oder Linguine)</td>
                 </tr>
