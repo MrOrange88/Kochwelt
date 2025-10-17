@@ -179,7 +179,7 @@ function updateZutaten(anzahlDerPortionen) {
 }
 
 const minimaleAnzahlAnPortionen = 1
-const maximaleAnzahlAnPortionen = 20
+const maximaleAnzahlAnPortionen = 12
 
 function werterhöhen() {    
     let plus1 = document.getElementById("person-input").value;

@@ -176,6 +176,7 @@ li {
   width: 150px;
   height: 30px;
   border: 0;
+  font-size: 16px;
   font-family: Raleway, sans-serif;
   cursor: pointer;
   transition: all 100ms ease-in-out;
@@ -370,6 +371,7 @@ textarea {
   height: 30px;
   border: 0;
   font-family: Raleway, sans-serif;
+  font-size: 16px;
   cursor: pointer;
   margin-top: 24px;
   margin-bottom: 100px;
