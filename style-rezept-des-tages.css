@@ -15,14 +15,17 @@ h3 {
 
 .recipe-nil-section {
   width: 80vw;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 16px;
+  
 }
 
 .recipe-img {
   width: 80vw;
+  max-width: 1440px;
   height: 250px;
   object-fit: cover;
   border-radius: 16px;
@@ -30,6 +33,7 @@ h3 {
 
 .recipe-nil-section-icons {
   width: 80vw;
+  max-width: 1440px;
   display: flex;
   gap: 16px;
   padding-top: 16px;
@@ -58,6 +62,7 @@ h3 {
 
 .ingredients-section {
   width: 80vw;
+  max-width: 1440px;
   display: flex;
   align-items: flex-start;
   gap: 48px;
@@ -148,6 +153,7 @@ h3 {
 
 .preparation-section {
   width: 80vw;
+  max-width: 1440px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -195,6 +201,7 @@ ol li.preparation-tipp::before {
 
 .nutritional-values-section {
   width: 80vw;
+  max-width: 1440px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -223,6 +230,7 @@ ol li.preparation-tipp::before {
 
 .recipe-created-by {
   width: 80vw;
+  max-width: 1440px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

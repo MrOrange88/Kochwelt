@@ -51,6 +51,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 80vw;
+  max-width: 1440px;
 }
 
 .header-logo {
@@ -158,6 +159,7 @@ li {
   display: flex;
   justify-content: center;
   width: 80vw;
+  max-width: 1440px;
   gap: 32px;
 }
 
@@ -211,6 +213,7 @@ li {
 
 .recipe-section-container {
   width: 80vw;
+  max-width: 1440px;
 }
 
 .recipe-section-img {
@@ -237,6 +240,7 @@ article {
   display: flex;
   justify-content: space-between;
   width: 80vw;
+  max-width: 1440px;
 }
 
 article p {
@@ -265,6 +269,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 80vw;
+  max-width: 1440px;
 }
 
 .footer-logo {
